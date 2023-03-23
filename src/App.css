@@ -1,12 +1,49 @@
 .App {
   text-align: center;
 }
-
+body {
+  background-color: #282c34;
+  color:#fff;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.task-bg{
+  background-color: #888;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding:10px 130px 10px 10px;
+  text-align:left;
+  font-size:16px;
+  position:relative;
 
+}
+.task-bg div
+{
+  display: flex;
+  align-items: center;
+
+}
+.tasknumber{
+  color:#333;
+  border: 1px solid #282c34;
+  border-radius: 10px;
+  width:30px;
+  height:30px;
+  display: flex;
+  text-align: center;
+  font-size:12px;
+  margin-right:6px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.task-bg .done .taskText{
+  text-decoration: line-through;
+  opacity: 0.7;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
